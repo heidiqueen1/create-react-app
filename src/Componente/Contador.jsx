@@ -17,7 +17,7 @@ const Contador = () => {
     };
 
     const reset = () => {
-        setCuenta(cuenta == 0);
+        setCuenta(0);
 
     };
 
@@ -29,9 +29,9 @@ const Contador = () => {
         <div>
             <center>
                 <h1>({cuenta})</h1>
-                <button onClick={aumentar}>Aumentar</button>
-                <button onClick={disminuir}>Disminuir</button>
-                <button onClick={reset}>Reset</button>
+                <button className="boton" onClick={aumentar}>Aumentar</button>
+                <button className="boton" onClick={disminuir}>Disminuir</button>
+                <button className="boton" onClick={reset}>Reset</button>
             </center>
         </div>
     );
