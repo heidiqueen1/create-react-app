@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Contador from './Componente/Contador';
+import React, {useState} from 'react';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='logo-calculadora-contenedor'>
+        <img className= 'logo-calculadora' 
+        src= {"https://th.bing.com/th/id/OIP.QH-Ovb04TZFrHXnZ2BuDEwAAAA?pid=ImgDet&w=272&h=176&rs=1"}
+        alt='logo de contador tipo calculadora'/>
+      </div>
+      <div className='contenedor-principal'>
+      <Contador/>
+      </div>
+      
     </div>
   );
 }
